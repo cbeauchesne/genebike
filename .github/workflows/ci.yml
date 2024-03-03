@@ -36,6 +36,9 @@ jobs:
       run: npm ci
     - name: Build
       run: npm run build
+      env:
+        NODE_ENV: production
+        BUILD_TARGET: gh-pages
     - name: Setup Pages
       uses: actions/configure-pages@v4
     - name: Upload artifact

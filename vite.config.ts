@@ -5,6 +5,9 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: process.env.BUILD_TARGET === 'gh-pages'
+  ? '/genebike'
+  : '/',
   plugins: [
     vue(),
   ],
