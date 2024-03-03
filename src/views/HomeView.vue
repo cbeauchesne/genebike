@@ -51,4 +51,10 @@ h3 {
   animation: fadeIn3 6s;
 }
 
+@media screen and (max-width: 340px){
+  h1 {
+    font-size: 2.5rem!important;
+  }
+}
+
 </style>
